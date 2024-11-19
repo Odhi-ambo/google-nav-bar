@@ -12,31 +12,35 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: GNav(
-        gap: 8,
-        activeColor: Colors.white,
-        iconSize: 24,
-        backgroundColor: Colors.black,
-        color: Colors.amberAccent,
-        tabBackgroundColor: Colors.grey.shade800,
-        tabs: const [
-          GButton(
-            icon: Icons.home,
-            text: 'Home',
-          ),
-          GButton(
-            icon: Icons.search,
-            text: 'Search',
-          ),
-          GButton(
-            icon: Icons.favorite,
-            text: 'Favourite',
-          ),
-          GButton(
-            icon: Icons.person,
-            text: 'Profile',
-          ),
-        ],
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: GNav(
+          gap: 8,
+          activeColor: Colors.white,
+          iconSize: 24,
+          backgroundColor: Colors.black,
+          color: Colors.amberAccent,
+          tabBackgroundColor: Colors.grey.shade800,
+          padding: const EdgeInsets.all(16),
+          tabs: const [
+            GButton(
+              icon: Icons.home,
+              text: 'Home',
+            ),
+            GButton(
+              icon: Icons.search,
+              text: 'Search',
+            ),
+            GButton(
+              icon: Icons.favorite,
+              text: 'Favourite',
+            ),
+            GButton(
+              icon: Icons.person,
+              text: 'Profile',
+            ),
+          ],
+        ),
       ),
     );
   }
