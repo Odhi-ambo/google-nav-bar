@@ -11,8 +11,9 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return  const Scaffold(
+    return const Scaffold(
       bottomNavigationBar: GNav(
+        gap: 8,
         tabs: [
           GButton(
             icon: Icons.home,
