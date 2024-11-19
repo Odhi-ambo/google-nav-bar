@@ -14,6 +14,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return const Scaffold(
       bottomNavigationBar: GNav(
         gap: 8,
+        activeColor: Colors.white,
         tabs: [
           GButton(
             icon: Icons.home,
