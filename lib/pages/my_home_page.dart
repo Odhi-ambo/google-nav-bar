@@ -18,6 +18,7 @@ class _MyHomePageState extends State<MyHomePage> {
         iconSize: 24,
         backgroundColor: Colors.black,
         color: Colors.amberAccent,
+        tabBackgroundColor: Colors.grey,
         tabs: [
           GButton(
             icon: Icons.home,
