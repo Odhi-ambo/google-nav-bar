@@ -11,15 +11,15 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       bottomNavigationBar: GNav(
         gap: 8,
         activeColor: Colors.white,
         iconSize: 24,
         backgroundColor: Colors.black,
         color: Colors.amberAccent,
-        tabBackgroundColor: Colors.grey,
-        tabs: [
+        tabBackgroundColor: Colors.grey.shade800,
+        tabs: const [
           GButton(
             icon: Icons.home,
             text: 'Home',
